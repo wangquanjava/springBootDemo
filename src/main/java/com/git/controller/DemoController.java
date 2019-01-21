@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * @author wangquan07
- * 2019/1/21 16:53
+ *         2019/1/21 16:53
  */
 @RestController
 public class DemoController {
@@ -23,6 +23,7 @@ public class DemoController {
     public BaseResponse getUrl() {
         return BaseResponse.successData(url);
     }
+
     @RequestMapping("/get")
     public BaseResponse get(Integer id) {
         Demo demo = demoService.get(id);

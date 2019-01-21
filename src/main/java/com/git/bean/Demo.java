@@ -1,15 +1,26 @@
 package com.git.bean;
 
-import lombok.Data;
-
-import java.util.Date;
-
 /**
  * @author wangquan07
- * 2019/1/21 21:12
+ *         2019/1/21 21:12
  */
-@Data
 public class Demo {
     private Integer id;
-    private Date startDate;
+    private String startDate;
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
+    public String getStartDate() {
+        return startDate;
+    }
+
+    public void setStartDate(String startDate) {
+        this.startDate = startDate;
+    }
 }
